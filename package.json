@@ -1,13 +1,21 @@
 {
   "name": "share-twitter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create a Twitter share url with ease",
   "main": "index.js",
   "repository": "https://github.com/bukinoshita/share-twitter.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "keywords": ["twitter", "share", "url", "social", "media"],
-  "files": ["index.js"],
+  "keywords": [
+    "twitter",
+    "share",
+    "url",
+    "social",
+    "media"
+  ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "xo & ava"
   },
@@ -17,7 +25,11 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": ["prettier"],
-    "ignores": ["examples/*.js"]
+    "extends": [
+      "prettier"
+    ],
+    "ignores": [
+      "examples/*.js"
+    ]
   }
 }
