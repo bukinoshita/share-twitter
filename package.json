@@ -2,8 +2,9 @@
   "name": "share-twitter",
   "version": "0.0.1",
   "description": "Create a Twitter share url with ease",
-  "main": "index.js",
-  "repository": "https://github.com/bukinoshita/share-twitter.git",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "bukinoshita/share-twitter",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -13,16 +14,24 @@
     "social",
     "media"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "files": [
-    "index.js"
+    "dist"
   ],
   "scripts": {
-    "test": "xo & ava"
+    "build": "tsc",
+    "prepublish": "yarn build",
+    "test": "jest --config=jest.config.json"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
-    "eslint-config-prettier": "^2.6.0",
-    "xo": "^0.18.2"
+    "@sindresorhus/tsconfig": "0.7.0",
+    "@types/jest": "26.0.4",
+    "@types/node": "14.0.19",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.1",
+    "typescript": "3.9.6"
   },
   "xo": {
     "extends": [
