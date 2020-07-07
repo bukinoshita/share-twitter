@@ -1,6 +1,6 @@
 {
   "name": "share-twitter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create a Twitter share url with ease",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
