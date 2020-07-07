@@ -1,14 +1,12 @@
-# share-twitter [![Build Status](https://travis-ci.org/bukinoshita/share-twitter.svg?branch=master)](https://travis-ci.org/bukinoshita/share-twitter)
+# share-twitter
 
 > Create a Twitter share url with ease
-
 
 ## Install
 
 ```bash
 $ yarn add share-twitter
 ```
-
 
 ## Usage
 
@@ -17,18 +15,16 @@ const shareTwitter = require('share-twitter')
 
 shareTwitter({
   text: 'Check this library to help you create share twitter url',
-  url: 'https://github.com/bukinoshita/share-twitter'
+  url: 'https://github.com/bukinoshita/share-twitter',
 })
 // https://twitter.com/intent/tweet?text=Check%20this%20library%20to%20help%20you%20create%20share%20twitter%20url&url=https://github.com/bukinoshita/share-twitter
 ```
 
 _When add the `url` to a `<a/>` tag it should work like [this](https://twitter.com/intent/tweet?text=Check%20this%20library%20to%20help%20you%20create%20share%20twitter%20url&url=https://github.com/bukinoshita/share-twitter)_
 
-
 ## Examples
 
 Check the [examples](https://github.com/bukinoshita/share-twitter/blob/master/examples)
-
 
 ## API
 
@@ -78,12 +74,10 @@ Example: `525001166233403393`
 
 The Tweet ID of a parent Tweet in a conversation, such as the initial Tweet from your site or author account.
 
-
 ## Related
 
 - [share-facebook](https://github.com/bukinoshita/share-facebook) — Create a Facebook share url with ease
 
-
 ## License
 
-MIT © [Bu Kinoshita](https://bukinoshita.io)
+MIT © [Bu Kinoshita](https://bukinoshita.com)
